@@ -1,0 +1,12 @@
+WATCH THE VIDEOS IN THE demo_videos folder!
+
+You HAVE to use all the html, css, variables, and functions that I've provided
+
+Make sure you connect the files!
+
+Component Difficulty
+Checkout - 1
+Form - 2 (long and tedious)
+Items - 3 (need some data thinking)
+
+please email hleung70@bcit.ca for questions.

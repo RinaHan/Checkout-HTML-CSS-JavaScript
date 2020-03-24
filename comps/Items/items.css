@@ -1,0 +1,8 @@
+.items{
+  display:flex;
+  flex-direction: column;
+}
+
+.item_box {
+  display:inline-flex;
+}
