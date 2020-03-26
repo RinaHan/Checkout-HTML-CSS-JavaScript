@@ -44,14 +44,10 @@ function Item1StatusAdd(){
   document.querySelector("#item_status").innerHTML = "You've added "+ item_state[0].title + ". You have " + item_state[0].num + " " + item_state[0].title +"!";
 }
 function Item2StatusAdd(){
-  //add 1 to the num of item_state, and update the UI
-  //  document.querySelector("#circ2").innerHTML = item_state[0].num;
   item_state[1].num++
   document.querySelector("#item_status").innerHTML = "You've added "+ item_state[1].title + ". You have " + item_state[1].num + " " + item_state[1].title +"!";
 }
 function Item3StatusAdd(){
-  //add 1 to the num of item_state, and update the UI
-  //  document.querySelector("#circ3").innerHTML = item_state[0].num;
   item_state[2].num++
   document.querySelector("#item_status").innerHTML = "You've added "+ item_state[2].title + ". You have " + item_state[2].num + " " + item_state[2].title +"!";
 }
@@ -62,12 +58,10 @@ function Item1StatusRemove(){
   document.querySelector("#item_status").innerHTML = "You've remove "+ item_state[0].title + ". You have " + item_state[0].num + " " + item_state[0].title +"!";
 }
 function Item2StatusRemove(){
-  //subtract 1 to the num of item_state, and update the UI
   item_state[1].num--
   document.querySelector("#item_status").innerHTML = "You've remove "+ item_state[1].title + ". You have " + item_state[1].num + " " + item_state[1].title +"!";
 }
 function Item3StatusRemove(){
-    //subtract 1 to the num of item_state, and update the UI
     item_state[2].num--
     document.querySelector("#item_status").innerHTML = "You've remove "+ item_state[2].title + ". You have " + item_state[2].num + " " + item_state[2].title +"!";
   }
