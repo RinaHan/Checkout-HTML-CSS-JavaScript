@@ -1,8 +1,49 @@
+html, body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .items{
   display:flex;
   flex-direction: column;
+  /* width: 400px; */
 }
-
+.item_sort{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(252, 185, 211);
+  width: 250px;
+  height: 50px;
+  color: aliceblue;
+  font-size: x-large;
+  border-right: gray solid 4px;
+}
+.item_icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(192, 177, 245);
+  width: 130px;
+  color: aliceblue;
+}
+.plus{
+  margin-right: 20px;
+}
 .item_box {
   display:inline-flex;
+}
+.item_circ{
+  background-color: rgb(169, 248, 199);
+  width: 70px;
+  color: aliceblue;
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item_box, #item_status{
+  padding: 5px;
 }
