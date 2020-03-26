@@ -8,21 +8,50 @@
   <title>Items</title>
 </head>
 <body>
-  <div class="items">
+  <div class="items" onclick="ItemUpdate()">
     <div id="item1" class="item_box">
-      <div>Item 1</div>
-      <div>
-        <span class="material-icons">
+      <div class="item_sort item1">Item 1</div>
+      <div class="item_icons">
+        <span class="material-icons plus1" onclick="Item1StatusAdd()">
           add_circle
         </span>
-        <span class="material-icons">
+        <span class="material-icons" onclick="Item1StatusRemove()">
           delete
         </span>
       </div>
-      <div class="item_circ">3</div>
+      <div class="item_circ" id="circ1">3</div>
     </div>
 
-    <div id="item_status"></div>
+    <div id="item2" class="item_box">
+      <div class="item_sort item2">Item 1</div>
+      <div class="item_icons">
+        <span class="material-icons plus2" onclick="Item2StatusAdd()">
+          add_circle
+        </span>
+        <span class="material-icons" onclick="Item2StatusRemove()">
+          delete
+        </span>
+      </div>
+      <div class="item_circ" id="circ2">3</div>
+    </div>
+
+    <div id="item3" class="item_box">
+      <div class="item_sort item3">Item 1</div>
+      <div class="item_icons">
+        <span class="material-icons plus3" onclick="Item3StatusAdd()">
+          add_circle
+        </span>
+        <span class="material-icons" onclick="Item3StatusRemove()">
+          delete
+        </span>
+      </div>
+      <div class="item_circ" id="circ3">3</div>
+    </div>
+
+    
+
+
+    <div id="item_status">You've added/removed ...items</div>
   </div>
   <script src="items.js"></script>
 </body>
