@@ -7,6 +7,10 @@
   padding: 0px 10px 0px 10px;
 }
 
+.shopping_cart:hover {
+  cursor: pointer;
+}
+
 .material-icons {
   padding: 10px;
 }
