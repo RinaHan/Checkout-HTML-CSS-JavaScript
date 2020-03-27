@@ -1,5 +1,8 @@
 function StartShopping(){
   //hide the button and show the items component
+  document.querySelector(".items_comp").style.display = "flex";
+  document.querySelector("#app button").style.display = "none";
+  
 }
 
 function ShowFormComp(){
