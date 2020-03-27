@@ -3,9 +3,9 @@
   flex-direction: column;
 }
 
-.confirm {
+/*.confirm {
   display:none;
-}
+}*/
 
 #grid {
   display: grid;
@@ -30,4 +30,9 @@
 #submitbut {
   height: 50px;
   grid-column: 1/3;
+}
+
+#confirmpage{
+  border-style: solid;
+  padding: 10px;
 }
