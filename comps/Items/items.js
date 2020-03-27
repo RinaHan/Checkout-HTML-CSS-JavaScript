@@ -41,27 +41,46 @@ function ItemUpdate(){
 function Item1StatusAdd(){
   //add 1 to the num of item_state, and update the UI
   item_state[0].num++
+  checkout_cart++;
+  var itemnumber = document.getElementsByClassName("itemcounter")[0]
+  itemnumber.textContent=checkout_cart
   document.querySelector("#item_status").innerHTML = "You've added "+ item_state[0].title + ". You have " + item_state[0].num + " " + item_state[0].title +"!";
 }
+
 function Item2StatusAdd(){
   item_state[1].num++
+  checkout_cart++;
+  var itemnumber = document.getElementsByClassName("itemcounter")[0]
+  itemnumber.textContent=checkout_cart
   document.querySelector("#item_status").innerHTML = "You've added "+ item_state[1].title + ". You have " + item_state[1].num + " " + item_state[1].title +"!";
 }
 function Item3StatusAdd(){
   item_state[2].num++
+  checkout_cart++;
+  var itemnumber = document.getElementsByClassName("itemcounter")[0]
+  itemnumber.textContent=checkout_cart
   document.querySelector("#item_status").innerHTML = "You've added "+ item_state[2].title + ". You have " + item_state[2].num + " " + item_state[2].title +"!";
 }
 
 function Item1StatusRemove(){
   //subtract 1 to the num of item_state, and update the UI
   item_state[0].num--
+  checkout_cart--;
+  var itemnumber = document.getElementsByClassName("itemcounter")[0]
+  itemnumber.textContent=checkout_cart
   document.querySelector("#item_status").innerHTML = "You've remove "+ item_state[0].title + ". You have " + item_state[0].num + " " + item_state[0].title +"!";
 }
 function Item2StatusRemove(){
   item_state[1].num--
+  checkout_cart--;
+  var itemnumber = document.getElementsByClassName("itemcounter")[0]
+  itemnumber.textContent=checkout_cart
   document.querySelector("#item_status").innerHTML = "You've remove "+ item_state[1].title + ". You have " + item_state[1].num + " " + item_state[1].title +"!";
 }
 function Item3StatusRemove(){
     item_state[2].num--
+    checkout_cart--;
+  var itemnumber = document.getElementsByClassName("itemcounter")[0]
+  itemnumber.textContent=checkout_cart
     document.querySelector("#item_status").innerHTML = "You've remove "+ item_state[2].title + ". You have " + item_state[2].num + " " + item_state[2].title +"!";
   }

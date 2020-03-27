@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,27 @@
   <link href="./form.css" rel="stylesheet" />
   <title>Form</title>
 </head>
+
 <body>
   <div class="form">
-    <div id="error"></div>
     <div id="grid">
-      <input type="text" name="" id="address">
-      <input type="text" name="" id="phonenum">
-      <input type="text" name="" id="country">
-      <button id="submitbut">Submit</button>
+      <input type="text" placeholder="Address" id="address" onchange="FormAddressCheck()">
+      <input type="text" placeholder="Phone Number" id="phonenum" onchange="FormPhoneCheck()">
+      <input type="text" placeholder="Country" id="country" onchange="FormCountryCheck()">
+      <button id="submitbut" onclick="FormSubmit()">Submit</button>
+    </div>
+    <div id="error"></div>
   </div>
 
   <div class="confirm">
     <div id="confirm_text"></div>
-    <button>Confirm</button>
-    <button>Cancel</button>
+    <div class="confirm_b">
+    <button >Confirm</button>
+    <button >Cancel</button>
+    </div>
   </div>
-  
+
   <script src="form.js"></script>
 </body>
+
 </html>

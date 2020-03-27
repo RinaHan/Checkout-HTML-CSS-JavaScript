@@ -5,16 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="app.css" rel="stylesheet"/>
+  <link href="comps/Items/items.css" rel="stylesheet" />
+  <link href="comps/Checkout/checkout.css" rel="stylesheet" />
   <title>Assessment 2</title>
 </head>
 <body>
   <div id="app">
-    <button>Start Shopping</button>
+    <button onclick="StartShopping()">Start Shopping</button>
+   
     <div class="checkout_comp">
+      <div class="checkout">
+        <div onclick="IncreaseCart()" class="shopping_cart">
+          <span class="material-icons">
+            shopping_cart
+          </span>
+          <p class="itemcounter">0</p>
+        </div>
+        <button onclick="CheckoutChangeMsg()" class="button1">Checkout</button>
+      </div>
+      <div id="checkout_msg">
+      </div>
     </div>
     <!-- CHECKOUT COMP END -->
 
     <div class="items_comp">
+      <div class="items" onclick="ItemUpdate()">
+        <div id="item1" class="item_box">
+          <div class="item_sort item1">Item 1</div>
+          <div class="item_icons">
+            <span class="material-icons plus1" onclick="Item1StatusAdd()">
+              add_circle
+            </span>
+            <span class="material-icons" onclick="Item1StatusRemove()">
+              delete
+            </span>
+          </div>
+          <div class="item_circ" id="circ1">3</div>
+        </div>
+        <div id="item2" class="item_box">
+          <div class="item_sort item2">Item 2</div>
+          <div class="item_icons">
+            <span class="material-icons plus2" onclick="Item2StatusAdd()">
+              add_circle
+            </span>
+            <span class="material-icons" onclick="Item2StatusRemove()">
+              delete
+            </span>
+          </div>
+          <div class="item_circ" id="circ2">3</div>
+        </div>
+        <div id="item3" class="item_box">
+          <div class="item_sort item3">Item 3</div>
+          <div class="item_icons">
+            <span class="material-icons plus3" onclick="Item3StatusAdd()">
+              add_circle
+            </span>
+            <span class="material-icons" onclick="Item3StatusRemove()">
+              delete
+            </span>
+          </div>
+          <div class="item_circ" id="circ3">3</div>
+        </div>
+        <div id="item_status">You've added/removed ...items</div>
+      </div>
+
     </div>
     <!-- ITEM COMP END -->
 
@@ -23,5 +77,7 @@
     <!-- FORM COMP END -->
   </div>
   <script src="app.js"></script>
+  <script src="comps/Items/items.js"></script>
+  <script src="comps/Checkout/checkout.js"></script>
 </body>
 </html>

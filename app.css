@@ -7,3 +7,12 @@
   align-items:center;
   flex-direction: column;
 }
+.items_comp{
+  display: none;
+}
+.checkout_comp{
+  position: fixed;
+  top: 20px;
+  right: 50px;
+  flex-direction: column;
+}
