@@ -42,7 +42,7 @@ body, html{
   width: 400px;
   height: 250px;
   border: black 1px solid;
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 #confirm_text{
@@ -56,4 +56,9 @@ body, html{
   position: relative;
   bottom: -10px;
   left: 10px;
+}
+
+.form_comp {
+  display: none;
+  flex-direction: column;
 }

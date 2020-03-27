@@ -34,3 +34,12 @@
   border-radius: 3px;
   margin-top: 7px;
 }
+
+#checkout_msg {
+  font-weight: bold;
+  font-size: large;
+}
+
+.checkout_comp {
+  display: none;
+}
