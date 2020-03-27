@@ -15,7 +15,7 @@ function DecreaseCart(){
 
 function CheckoutChangeMsg(){
   //change the checkout message
-  var messagediv = 
+  document.querySelector(".form_comp").style.display="flex"
   document.getElementById("checkout_msg")
   if (checkout_cart === 0)
 

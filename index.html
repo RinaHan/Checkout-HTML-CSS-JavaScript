@@ -7,6 +7,7 @@
   <link href="app.css" rel="stylesheet"/>
   <link href="comps/Items/items.css" rel="stylesheet" />
   <link href="comps/Checkout/checkout.css" rel="stylesheet" />
+  <link href="comps/Form/form.css" rel="stylesheet" />
   <title>Assessment 2</title>
 </head>
 <body>
@@ -73,11 +74,29 @@
     <!-- ITEM COMP END -->
 
     <div class="form_comp">
+      <div class="form">
+        <div id="grid">
+          <input type="text" placeholder="Address" id="address" onchange="FormAddressCheck()">
+          <input type="text" placeholder="Phone Number" id="phonenum" onchange="FormPhoneCheck()">
+          <input type="text" placeholder="Country" id="country" onchange="FormCountryCheck()">
+          <button id="submitbut" onclick="FormSubmit()">Submit</button>
+        </div>
+        <div id="error"></div>
+      </div>
+    
+      <div class="confirm">
+        <div id="confirm_text"></div>
+        <div class="confirm_b">
+        <button onclick="FinalConfirm()">Confirm</button>
+        <button onclick="FinalCancel()">Cancel</button>
+        </div>
+      </div>
     </div>
     <!-- FORM COMP END -->
   </div>
   <script src="app.js"></script>
   <script src="comps/Items/items.js"></script>
   <script src="comps/Checkout/checkout.js"></script>
+  <script src="comps/Form/form.js"></script>
 </body>
 </html>
