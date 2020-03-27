@@ -1,14 +1,5 @@
 var checkout_cart = 0;
 var checkout_cost = 100;
-
-function itemboxon(){
-  //increase the number on the cart!
-  checkout_cart++;
-  var itemnumber = document.getElementsByClassName("itemcounter")[0]
-  itemnumber.textContent=checkout_cart
-
-}
-
 function IncreaseCart(){
   //increase the number on the cart!
   checkout_cart++;
