@@ -55,9 +55,7 @@ function FinalCancel() {
   document.querySelector(".confirm").style.display = "none";
 }
 
-function FinalConfirm() {
-  document.querySelector("#app").innerHTML = "";
-}
+
 
 function FormSubmit(){
   //check if form_data has information inside, if all 3 of address, phone, and country have stored values, then show the confirm message.

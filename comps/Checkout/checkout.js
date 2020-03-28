@@ -15,15 +15,16 @@ function DecreaseCart(){
 
 function CheckoutChangeMsg(){
   //change the checkout message
+  var messagediv = document.getElementById("checkout_msg")
   document.querySelector(".form_comp").style.display="flex"
-  document.getElementById("checkout_msg")
+  
   if (checkout_cart === 0)
 
   {
-    messagediv.textContent="you have no items to checkout!"
+    messagediv.textContent="you have no items to checkout!" ;
   }
 
   else {
-    messagediv.textContent="your total cost:$ " + checkout_cart * checkout_cost
+    messagediv.textContent="your total cost:$ " + "<div id = total>" + checkout_cart * checkout_cost + "</div>"
   }
 }
