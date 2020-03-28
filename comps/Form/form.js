@@ -36,13 +36,15 @@ function FormPhoneCheck() {
 
 var country_state ="canada" ;
 var america = "USA";
+var usa = "usa";
+var united = "united states"
 
 function FormCountryCheck() {
   //check if the country is canada or usa, if not give them an error!
   //otherwise store form_data's country
   var input = document.querySelector("#country").value;
   
-  if (input === country_state || input === america) {
+  if (input === country_state || input === america || input === usa || input === united ) {
     document.querySelector("#error").innerText = "Country ok";
     form_data.country=input
     
@@ -65,13 +67,6 @@ function FormSubmit(){
   document.querySelector("#confirm_text").innerHTML+= "<h1>" + form_data.address+"</h1>";
   document.querySelector("#confirm_text").innerHTML+= "<h1>" + form_data.phone+"</h1>";
   document.querySelector("#confirm_text").innerHTML+= "<h1>" + form_data.country+"</h1>";
-  
-
-
-
-
-
-  
 }
 
 
