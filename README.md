@@ -4,6 +4,17 @@
 **-Summary-**
 - Academic project | 2019
 
+**-Task-**
+-	created a checkout system using JavaScript
+
+  
+  
+**-Tech Stack-**
+- HTML
+- CSS
+- JavaScript
+
+
 **-Images-**
 
 <hr>
@@ -17,12 +28,3 @@
 <hr>
 
 
-**-Task-**
--	created a checkout system using JavaScript
-
-  
-  
-**-Tech Stack-**
-- HTML
-- CSS
-- JavaScript
